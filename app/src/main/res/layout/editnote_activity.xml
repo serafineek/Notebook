@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    tools:context=".EditNoteActivity">
+    <TextView
+        android:padding="15dp"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlebar"
+        android:text="Moje Notatki"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/noteTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tytul Notatki"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/textarea"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/noteTitle"
+        android:background="@color/titlebar"
+        android:gravity="start"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/saveNote"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textarea"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/titlebar"
+        android:padding="15dp"
+        android:text="Zapisz Notatke"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <Button
+        android:layout_below="@id/saveNote"
+        android:id="@+id/deleteButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/titlebar"
+        android:padding="15dp"
+        android:text="USUN"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+</RelativeLayout>

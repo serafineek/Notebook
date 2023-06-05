@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+    <TextView
+        android:padding="15dp"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlebar"
+        android:text="Moje Notatki"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+    <ScrollView
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:scrollbars="vertical"
+        android:overScrollMode="never">
+    <LinearLayout
+        android:id="@+id/noteContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/createNoteBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/titlebar"
+        android:padding="15dp"
+        android:text="Nowa Notatka"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+</RelativeLayout>
